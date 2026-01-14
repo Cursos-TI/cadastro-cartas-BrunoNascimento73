@@ -24,7 +24,7 @@ int main()
   int turismo2;     // A quantidade de pontos turísticos na cidade.
 
   // Área para entrada de dados
-  printf("diga o estado: \n");
+  printf("diga o estado: ");
   scanf("%c", &estado1);
 
   printf("diga o codigo: ");
@@ -33,21 +33,21 @@ int main()
   printf("diga a cidade: ");
   scanf("%s", cidade1);
 
-  printf("diga o população: \n");
+  printf("diga o populacao: ");
   scanf("%d", &pop1);
 
-  printf("diga a area: \n");
-  scanf("%f", area1);
+  printf("diga a area: ");
+  scanf("%f", &area1);
 
   printf("diga a pib: ");
-  scanf("%f", pib1);
+  scanf("%f", &pib1);
 
   printf("diga a turismo: ");
-  scanf("%d", turismo1);
+  scanf("%d", &turismo1);
 
   // entrada 2
 
-  printf("diga o estado: \n");
+  printf("diga o estado: ");
   scanf("%c", &estado2);
 
   printf("diga o codigo: ");
@@ -56,17 +56,17 @@ int main()
   printf("diga a cidade: ");
   scanf("%s", cidade2);
 
-  printf("diga o população: \n");
+  printf("diga o população: ");
   scanf("%d", &pop2);
 
   printf("diga a area: ");
-  scanf("%f", area2);
+  scanf("%f", &area2);
 
   printf("diga a pib: ");
-  scanf("%f", pib2);
+  scanf("%f", &pib2);
 
   printf("diga a turismo: ");
-  scanf("%d", turismo2);
+  scanf("%d", &turismo2);
 
   // Área para exibição dos dados da cidade
   // saida 1
