@@ -12,7 +12,7 @@ int main()
   char cidade1[20]; // O nome da cidade.
   int pop1;         // O número de habitantes da cidade
   float area1;      // A área da cidade em quilômetros quadrados.
-  float pib1;       // o pib da cidade.
+  float pib1;       // A área da cidade em quilômetros quadrados.
   int turismo1;     // A quantidade de pontos turísticos na cidade.
 
   char estado2;     // Uma letra de 'A' a 'H' (representando um dos oito estados).
@@ -20,51 +20,52 @@ int main()
   char cidade2[20]; // O nome da cidade.
   int pop2;         // O número de habitantes da cidade
   float area2;      // A área da cidade em quilômetros quadrados.
-  float pib2;       // o pib da cidade.
+  float pib2;       // A área da cidade em quilômetros quadrados.
   int turismo2;     // A quantidade de pontos turísticos na cidade.
 
   // Área para entrada de dados
-  printf("diga o estado: \n");
-  scanf(" %c", &estado1);
+  printf("Insira um estado da letra 'A' a 'H': ");
+  scanf("%c", &estado1);
 
-  printf("diga o codigo: \n");
-  scanf(" %19s", codigo1);
+  printf("Insira o codigo deste estado de e 01 a 04: ");
+  scanf("%s", codigo1);
 
-  printf("diga a cidade: \n");
-  scanf("%19s", cidade1);
+  printf("Insira uma cidade deste estado: ");
+  scanf("%s", cidade1);
 
-  printf("diga o populacao: \n");
+  printf("Insira a população: ");
   scanf("%d", &pop1);
 
-  printf("diga a area: \n");
+  printf("Insira a area: ");
   scanf("%f", &area1);
 
-  printf("diga a pib: \n");
+  printf("Insira o pib: ");
   scanf("%f", &pib1);
 
-  printf("diga a turismo: \n");
+  printf("Quantidade de atrações de turismo: ");
   scanf("%d", &turismo1);
 
   // entrada 2
-  printf("diga o estado: ");
+
+  printf("Insira um estado da letra 'A' a 'H': ");
   scanf(" %c", &estado2);
 
-  printf("diga o codigo: ");
-  scanf("%19s", codigo2);
+  printf("Insira o codigo deste estado de e 01 a 04: ");
+  scanf("%s", codigo2);
 
-  printf("diga a cidade: ");
-  scanf("%19s", cidade2);
+  printf("Insira uma cidade deste estado: ");
+  scanf("%s", cidade2);
 
-  printf("diga o população: ");
+  printf("Insira a população: ");
   scanf("%d", &pop2);
 
-  printf("diga a area: ");
+  printf("Insira a area: ");
   scanf("%f", &area2);
 
-  printf("diga a pib: ");
+  printf("Insira o pib: ");
   scanf("%f", &pib2);
 
-  printf("diga a turismo: ");
+  printf("Quantidade de atrações de turismo: ");
   scanf("%d", &turismo2);
 
   // Área para exibição dos dados da cidade
@@ -77,6 +78,7 @@ int main()
   printf("este é o pib %f \n", pib1);
   printf("este é o turismo %d \n", turismo1);
   // saida 2
+  printf("-------------------------\n");
   printf("o estado é: %c\n", estado2);
   printf("o codigo é: %s\n", codigo2);
   printf("a cidade é %s \n", cidade2);
