@@ -67,6 +67,18 @@ int main()
 
   printf("Quantidade de atrações de turismo: ");
   scanf("%d", &turismo2);
+  printf("\n");
+
+  // Funcoes de calculo media popu e pip percapta
+  float pibcapta1,pibcapta2;
+  float densidadepop1,densidadepop2;
+
+  // calculando pip percapta
+  pibcapta1 =(float)pib1/pop1;
+  pibcapta2 =(float)pib1/pib2;
+  // calculando densidade populacional
+  densidadepop1 = pop1/area1;
+  densidadepop2 = pop2/pop2;
 
   // Área para exibição dos dados da cidade
   // saida 1
@@ -77,6 +89,8 @@ int main()
   printf("a area é %f \n", area1);
   printf("este é o pib %f \n", pib1);
   printf("este é o turismo %d \n", turismo1);
+  printf("este é seu pib: %f \n", pibcapta1);
+  printf("esta é usa densidade populacional: %f \n", densidadepop1);
   // saida 2
   printf("-------------------------\n");
   printf("o estado é: %c\n", estado2);
@@ -86,6 +100,7 @@ int main()
   printf("a area é %f \n", area2);
   printf("este é o pib %f \n", pib2);
   printf("este é o turismo %d \n", turismo2);
-
+  printf("este é seu pib: %.2f \n", pibcapta2);
+  printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
   return 0;
 }
