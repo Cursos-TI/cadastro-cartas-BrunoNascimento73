@@ -70,15 +70,15 @@ int main()
   printf("\n");
 
   // Funcoes de calculo media popu e pip percapta
-  float pibcapta1,pibcapta2;
-  float densidadepop1,densidadepop2;
+  float pibcapta1, pibcapta2;
+  float densidadepop1, densidadepop2;
 
   // calculando pip percapta
   pibcapta1 =(float)pib1/pop1;
-  pibcapta2 =(float)pib1/pib2;
+  pibcapta2 =(float)pib2/pop2;
   // calculando densidade populacional
   densidadepop1 = pop1/area1;
-  densidadepop2 = pop2/pop2;
+  densidadepop2 = pop2/area2;
 
   // Área para exibição dos dados da cidade
   // saida 1
@@ -89,8 +89,9 @@ int main()
   printf("a area é %f \n", area1);
   printf("este é o pib %f \n", pib1);
   printf("este é o turismo %d \n", turismo1);
-  printf("este é seu pib: %f \n", pibcapta1);
+  printf("este é seu pib per capta: %f \n", pibcapta1);
   printf("esta é usa densidade populacional: %f \n", densidadepop1);
+  printf("\n");
   // saida 2
   printf("-------------------------\n");
   printf("o estado é: %c\n", estado2);
@@ -100,7 +101,32 @@ int main()
   printf("a area é %f \n", area2);
   printf("este é o pib %f \n", pib2);
   printf("este é o turismo %d \n", turismo2);
-  printf("este é seu pib: %.2f \n", pibcapta2);
+  printf("este é seu pib per capta: %.2f \n", pibcapta2);
   printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
+  printf("\n");
+  printf("-------------------------\n");
+  //Calcular super poder
+  float superPoder1 = (float)pop1 + area1 + pib1 + turismo1 + pibcapta1 + (1.0 / densidadepop1);
+  float superPoder2 = (float)pop2 + area2 + pib2 + (float)turismo2 + pibcapta2 + (1.0 / densidadepop2);
+  //Comparar cartas
+  int resultadoPop = pop1 > pop2;
+  int resultadoArea = area1 > area2;
+  int resultadoPib = pib1 > pib2;
+  int resultadoTurismo = turismo1 < turismo2;
+  int resultadoCapta = pibcapta1 > pibcapta2;
+  int resultadoDensidade = densidadepop1 > densidadepop2;
+  int resultadoSuperPoder = superPoder1 > superPoder2;
+
+
+  //resultado da comparação
+  printf("Batalha das cartas:\n");
+  printf("população carta 1 venceu? %d\n", resultadoPop);
+  printf("Área a carta 1 venceu? %d\n",resultadoArea);
+  printf("Pib a carta 1 venceu:? %d\n",resultadoPib);
+  printf("Pontos turisticos a carta 2 venceu? %d \n",resultadoTurismo);
+  printf("Densidade populacional a carta 1 venceu? %d \n",resultadoDensidade);
+  printf("pib per capta a carta 1 venceu? %d \n",resultadoCapta);
+  printf("Super poder a carta 1 venceu? %d \n",resultadoSuperPoder);
+  
   return 0;
 }
