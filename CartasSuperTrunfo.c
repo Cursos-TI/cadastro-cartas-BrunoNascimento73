@@ -46,7 +46,6 @@ int main()
   scanf("%d", &turismo1);
 
   // entrada 2
-
   printf("Insira um estado da letra 'A' a 'H': ");
   scanf(" %c", &estado2);
 
@@ -69,7 +68,7 @@ int main()
   scanf("%d", &turismo2);
   printf("\n");
 
-  // Funcoes de calculo media popu e pip percapta
+  // Funcoes de calculo media popu e pip per capta
   float pibcapta1, pibcapta2;
   float densidadepop1, densidadepop2;
 
@@ -82,6 +81,7 @@ int main()
 
   // Área para exibição dos dados da cidade
   // saida 1
+
   printf("o estado é: %c\n", estado1);
   printf("o codigo é: %s\n", codigo1);
   printf("a cidade é %s \n", cidade1);
@@ -92,6 +92,8 @@ int main()
   printf("este é seu pib per capta: %f \n", pibcapta1);
   printf("esta é usa densidade populacional: %f \n", densidadepop1);
   printf("\n");
+
+
   // saida 2
   printf("-------------------------\n");
   printf("o estado é: %c\n", estado2);
@@ -105,9 +107,13 @@ int main()
   printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
   printf("\n");
   printf("-------------------------\n");
+
+
   //Calcular super poder
   float superPoder1 = (float)pop1 + area1 + pib1 + turismo1 + pibcapta1 + (1.0 / densidadepop1);
   float superPoder2 = (float)pop2 + area2 + pib2 + (float)turismo2 + pibcapta2 + (1.0 / densidadepop2);
+
+
   //Comparar cartas
   int resultadoPop = pop1 > pop2;
   int resultadoArea = area1 > area2;
@@ -116,9 +122,9 @@ int main()
   int resultadoCapta = pibcapta1 > pibcapta2;
   int resultadoDensidade = densidadepop1 > densidadepop2;
   int resultadoSuperPoder = superPoder1 > superPoder2;
+  
 
-
-  //resultado da comparação
+  /*resultado da comparação
   printf("Batalha das cartas:\n");
   printf("população carta 1 venceu? %d\n", resultadoPop);
   printf("Área a carta 1 venceu? %d\n",resultadoArea);
@@ -127,6 +133,20 @@ int main()
   printf("Densidade populacional a carta 1 venceu? %d \n",resultadoDensidade);
   printf("pib per capta a carta 1 venceu? %d \n",resultadoCapta);
   printf("Super poder a carta 1 venceu? %d \n",resultadoSuperPoder);
+  */
+
+  //Resultado comparação definido no codigo
+  printf("Resultado da batalha de cartas (atributo densidade populacional):\n");
+  printf("carta 1 %c (%s): %.2f \n", estado1, cidade1, densidadepop1);
+  printf("carta 2 %c (%s): %.2f \n", estado2, cidade2, densidadepop2);
+
+  if (densidadepop1 > densidadepop2) {
+    printf("Carta 2 foi a vencedora! (Menor densidade)\n");
+  } else if (densidadepop1 < densidadepop2) {
+    printf("Carta 1 foi a vencedora! (Menor densidade)\n");
+  } else {
+    printf("Houve um empate!\n");
+  };
   
   return 0;
 }
