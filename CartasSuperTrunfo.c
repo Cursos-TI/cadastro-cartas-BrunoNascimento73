@@ -7,66 +7,23 @@
 int main()
 {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado1;     // Uma letra de 'A' a 'H' (representando um dos oito estados).
-  char codigo1[20]; // A letra do estado seguida de um número de 01 a 04 (ex: A01, B03)
-  char cidade1[20]; // O nome da cidade.
-  int pop1;         // O número de habitantes da cidade
-  float area1;      // A área da cidade em quilômetros quadrados.
-  float pib1;       // A área da cidade em quilômetros quadrados.
-  int turismo1;     // A quantidade de pontos turísticos na cidade.
+  char estado1 = 'A';                // Uma letra de 'A' a 'H' (representando um dos oito estados).
+  char codigo1[20] = "A01";          // A letra do estado seguida de um número de 01 a 04 (ex: A01, B03)
+  char cidade1[20] = "Sao Paulo";    // O nome da cidade.
+  int pop1 = 12325232;               // O número de habitantes da cidade
+  float area1 = 1521.11;             // A área da cidade em quilômetros quadrados.
+  float pib1 = 1250.50;              // A área da cidade em quilômetros quadrados.
+  int turismo1 = 50;                 // A quantidade de pontos turísticos na cidade.
 
-  char estado2;     // Uma letra de 'A' a 'H' (representando um dos oito estados).
-  char codigo2[20]; // A letra do estado seguida de um número de 01 a 04 (ex: A01, B03)
-  char cidade2[20]; // O nome da cidade.
-  int pop2;         // O número de habitantes da cidade
-  float area2;      // A área da cidade em quilômetros quadrados.
-  float pib2;       // A área da cidade em quilômetros quadrados.
-  int turismo2;     // A quantidade de pontos turísticos na cidade.
+  char estado2 = 'B';                // Uma letra de 'A' a 'H' (representando um dos oito estados).
+  char codigo2[20] = "A01";          // A letra do estado seguida de um número de 01 a 04 (ex: A01, B03)
+  char cidade2[20] = "Rio de Janeiro";    // O nome da cidade.
+  int pop2 = 12325232;               // O número de habitantes da cidade
+  float area2 = 1521.11;             // A área da cidade em quilômetros quadrados.
+  float pib2 = 1250.50;              // A área da cidade em quilômetros quadrados.
+  int turismo2 = 50;                 // A quantidade de pontos turísticos na cidade.
 
-  // Área para entrada de dados
-  printf("Insira um estado da letra 'A' a 'H': ");
-  scanf("%c", &estado1);
 
-  printf("Insira o codigo deste estado de e 01 a 04: ");
-  scanf("%s", codigo1);
-
-  printf("Insira uma cidade deste estado: ");
-  scanf("%s", cidade1);
-
-  printf("Insira a população: ");
-  scanf("%d", &pop1);
-
-  printf("Insira a area: ");
-  scanf("%f", &area1);
-
-  printf("Insira o pib: ");
-  scanf("%f", &pib1);
-
-  printf("Quantidade de atrações de turismo: ");
-  scanf("%d", &turismo1);
-
-  // entrada 2
-  printf("Insira um estado da letra 'A' a 'H': ");
-  scanf(" %c", &estado2);
-
-  printf("Insira o codigo deste estado de e 01 a 04: ");
-  scanf("%s", codigo2);
-
-  printf("Insira uma cidade deste estado: ");
-  scanf("%s", cidade2);
-
-  printf("Insira a população: ");
-  scanf("%d", &pop2);
-
-  printf("Insira a area: ");
-  scanf("%f", &area2);
-
-  printf("Insira o pib: ");
-  scanf("%f", &pib2);
-
-  printf("Quantidade de atrações de turismo: ");
-  scanf("%d", &turismo2);
-  printf("\n");
 
   // Funcoes de calculo media popu e pip per capta
   float pibcapta1, pibcapta2;
