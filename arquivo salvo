@@ -42,3 +42,25 @@
   printf("Quantidade de atrações de turismo: ");
   scanf("%d", &turismo2);
   printf("\n");
+
+  printf("o estado é: %c\n", estado1);
+  printf("o codigo é: %s\n", codigo1);
+  printf("a cidade é %s \n", cidade1);
+  printf("a população é %d \n", pop1);
+  printf("a area é %f \n", area1);
+  printf("este é o turismo %d \n", turismo1);
+  printf("este é o pib %f \n", pib1);
+  printf("este é seu pib per capta: %f \n", pibcapta1);
+  printf("esta é usa densidade populacional: %f \n", densidadepop1);
+  printf("------------------------\n");
+  printf("o estado é: %c\n", estado2);
+  printf("a cidade é %s \n", cidade2);
+  printf("a população é %d \n", pop2);
+  printf("a area é %f \n", area2);
+  printf("este é o turismo %d \n", turismo2);
+  printf("este é o pib %f \n", pib2);
+  printf("este é seu pib per capta: %.2f \n", pibcapta2);
+  printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
+
+  printf("\n");
+

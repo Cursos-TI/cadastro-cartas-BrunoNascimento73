@@ -98,7 +98,7 @@ int main()
         printf("este é o pib %f \n", pib2);
         printf("este é seu pib per capta: %.2f \n", pibcapta2);
         printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
-        
+
         printf("\n");
 
         switch (comp) {
@@ -173,7 +173,7 @@ int main()
       printf("opção invalida\n");
   }
   printf("------------------------\n");
-  
+
 
   return 0;
 }
