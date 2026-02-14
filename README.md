@@ -4,8 +4,7 @@ Projeto de desenvolvimento do jogo Super Trunfo, como parte da disciplina de Sup
 ## Descrição
 O objetivo é aprender a implementação e estrutura da linguagem C. O jogo permite que os jogadores comparem atributos de cartas, representados por cidades do Brasil, para decidir quem é o vencedor.
 
-## Feito com:
-![]([https://commons.wikimedia.org/wiki/File:C_Programming_Language.svg](https://www.vexels.com/png-svg/preview/166252/cpp-programming-language-flat))
+## Feito com: C
 
 ## Como executar
 Abra o terminal e navegue até o diretório onde seu arquivo está salvo. Use o gcc para compilar o código:

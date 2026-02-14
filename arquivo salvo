@@ -63,4 +63,97 @@
   printf("esta é usa densidade populacional: %.2f \n", densidadepop2);
 
   printf("\n");
+----------------------------------
+            case 1:
+            printf("população\n");
+            if (pop1 > pop2) {
+                printf("carta 1 Ganhou\n");
+                printf("População da Cidade %s é %d população da Cidade %s é %d\n", cidade1, pop1, cidade2, pop2);
+            } else if (pop1 < pop2) {
+                printf("carta 2 Ganhou\n");
+                printf("População da Cidade %s é %d população da Cidade %s é %d\n", cidade1, pop1, cidade2, pop2);
+            }else {
+                printf("EMPATE!\n");
+                printf("População da Cidade %s é %d população da Cidade %s é %d\n", cidade1, pop1, cidade2, pop2);
+            }
+            break;
+            case 2:
+            printf("area\n");
+            if (area1 > area2) {
+                printf("carta 1 Ganhou\n");
+                printf("Area da Cidade %s é %.2f população da Cidade %s é %.2f\n", cidade1, area1, cidade2, area2);
+            } else if (area1 < area1) {
+                printf("carta 2 Ganhou\n");
+                printf("Area da Cidade %s é %.2f população da Cidade %s é %.2f\n", cidade1, area1, cidade2, area2);
+            }else {
+                printf("EMPATE!\n");
+                printf("Area da Cidade %s é %.2f população da Cidade %s é %.2f\n", cidade1, area1, cidade2, area2);
+            }
+            break;
+            case 3:
+            printf("Pib");
+            if (pib1 > pib2) {
+                printf("carta 1 Ganhou\n");
+                printf("PIB da Cidade %s é %.2f - PIB da Cidade %s é %.2f\n", cidade1, pib1, cidade2, pib2);
+            } else if (pib1 < pib2) {
+                printf("carta 2 Ganhou\n");
+                printf("PIB da Cidade %s é %.2f - PIB da Cidade %s é %.2f\n", cidade1, pib1, cidade2, pib2);
+            }else {
+                printf("EMPATE!\n");
+                printf("PIB da Cidade %s é %.2f - PIB da Cidade %s é %.2f\n", cidade1, pib1, cidade2, pib2);
+            }
+            break;
+            case 4:
+            if (turismo1 >  turismo2) {
+                printf("Carta 1 Ganhou\n");
+                printf("A quantidade de pontos turisticos da Cidade %s é %d - Quantidade de pontos turisticos da Cidade %s é %d", cidade1, turismo1, cidade2, turismo2);
+            }else if (turismo1 < turismo2) {
+                printf("Carta 2 Ganhou\n");
+                printf("A quantidade de pontos turisticos da Cidade %s é %d - Quantidade de pontos turisticos da Cidade %s é %d", cidade1, turismo1, cidade2, turismo2);
+            }else {
+                printf("EMPATE!\n");
+                printf("A quantidade de pontos turisticos da Cidade %s é %d - Quantidade de pontos turisticos da Cidade %s é %d", cidade1, turismo1, cidade2, turismo2);
+            }
+            break;
+            case 5:
+            if (pibcapta1 > pibcapta2) {
+                printf("carta 1 Ganhou\n");
+                printf("PIB per Capta da Cidade %s é %.2f - PIB per Capta da Cidade %s é %.2f\n", cidade1, pibcapta1, cidade2, pibcapta2);
+            } else if (pibcapta1 < pibcapta2) {
+                printf("carta 2 Ganhou\n");
+                printf("PIB per Capta da Cidade %s é %.2f - PIB per Capta da Cidade %s é %.2f\n", cidade1, pibcapta1, cidade2, pibcapta2);
+            }else {
+                printf("EMPATE!\n");
+                printf("PIB per Capta da Cidade %s é %.2f - PIB per Capta da Cidade %s é %.2f\n", cidade1, pibcapta1, cidade2, pibcapta2);
+            }
+            break;
+            case 6:
+            if (densidadepop1 > densidadepop2) {
+                printf("carta 1 Ganhou\n");
+                printf("Densidade populacional da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, densidadepop1, cidade2, densidadepop2);
+            } else if (densidadepop1 < densidadepop2) {
+                printf("carta 2 Ganhou\n");
+                printf("Densidade populacional da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, densidadepop1, cidade2, densidadepop2);
+            }else {
+                printf("EMPATE!\n");
+                printf("Densidade populacional da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, densidadepop1, cidade2, densidadepop2);
+            }
+            break;
+            case 7:
+            if (superPoder1 > superPoder2)
+            {
+              printf("carta 1 Ganhou\n");
+                printf("Super Poder da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, superPoder1, cidade2, superPoder2);
+            } else if (superPoder1 < superPoder2) {
+                printf("carta 2 Ganhou\n");
+                printf("Super Poder da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, superPoder1, cidade2, superPoder2);
+            }else {
+                printf("EMPATE!\n");
+                printf("Super Poder da Cidade %s é %.2f - Densidade populacional da Cidade %s é %.2f\n", cidade1, superPoder1, cidade2, superPoder2);
+            }
 
+            break;
+
+
+            default:
+            printf("error\n");
