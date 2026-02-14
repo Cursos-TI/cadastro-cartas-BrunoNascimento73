@@ -9,9 +9,9 @@ O objetivo é aprender a implementação e estrutura da linguagem C. O jogo perm
 ## Como executar
 Abra o terminal e navegue até o diretório onde seu arquivo está salvo. Use o gcc para compilar o código:
 
-gcc -o Nome_do_Programa.c
+gcc -o CartasSuperTrunfo.c
 
-Isso cria um arquivo executável chamado Nome_do_Programa.
+Isso cria um arquivo executável chamado CartasSuperTrunfo.
 
 ## Executar:
 Execute o programa no terminal digitando:
